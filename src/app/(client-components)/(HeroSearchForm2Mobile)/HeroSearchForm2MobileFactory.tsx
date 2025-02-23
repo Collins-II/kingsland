@@ -9,8 +9,6 @@ import SearchForm from "./SearchForm";
 
 const PAGES_REAL_ESTATE: PathName[] = [
   "/home-2",
-  "/listing-real-estate",
-  "/listing-real-estate-map",
 ];
 
 const HeroSearchForm2MobileFactory = () => {

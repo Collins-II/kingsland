@@ -12,7 +12,7 @@ import { Amenities_demos } from "@/app/(listing-detail)/listing-stay-detail/cons
 
 const propertyTypes = ["Apartment", "House", "Condo", "Villa", "Studio"];
 
-export default function EstateSearch({ onClose }: { onClose: () => void }) {
+export default function EstateSearch() {
   const selectedCurrency = useSelector((state: RootState) => state.currency.selectedCurrency);
   const convertPrice = useConvertPrice();
   const [activeTab, setActiveTab] = useState("property");
