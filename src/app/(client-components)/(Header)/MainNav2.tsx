@@ -34,6 +34,7 @@ const MainNav2: FC<MainNav2Props> = ({ className = "" }) => {
         {/* Search Icon (Mobile) */}
         <div className="md:hidden flex items-center space-x-2">
           <button
+            aria-label="search"
             onClick={() => setShowSearch(!showSearch)}
             className="text-gray-800 dark:text-white focus:outline-none"
           >
