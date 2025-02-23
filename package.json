@@ -1,5 +1,5 @@
 {
-  "name": "chisfis-nextjs",
+  "name": "kingsland@v1",
   "version": "0.2.2",
   "private": true,
   "scripts": {
@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@headlessui/react": "^1.7.14",
+    "@headlessui/react": "^2.2.0",
     "@heroicons/react": "^2.0.18",
     "@react-google-maps/api": "^2.20.5",
     "@reduxjs/toolkit": "^2.5.1",
