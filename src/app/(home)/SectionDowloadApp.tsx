@@ -4,7 +4,7 @@ import appSvg1 from "@/images/appSvg1.png";
 import appSvg2 from "@/images/appSvg2.png";
 import appRightImgTree from "@/images/appRightImgTree.png";
 import dowloadAppBGPng from "@/images/dowloadAppBG.png";
-import appRightImg from "@/images/appRightImg.png";
+import appRightImg from "@/images/ests/est-7.jpg";
 import btnIosPng from "@/images/btn-ios.png";
 import btnAndroidPng from "@/images/btn-android.png";
 import Image from "next/image";
@@ -35,8 +35,7 @@ const SectionDowloadApp = () => {
           Mobile Apps
         </h2>
         <span className="block mt-7 max-w-md text-neutral-6000">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dapibus
-          porttitor nisl, sit amet finibus libero.
+          Download the app for the best experience and stay connected with us.
         </span>
         <div className="flex space-x-3 mt-10 sm:mt-14">
           <a href="##" target="_blank" rel="noopener noreferrer">

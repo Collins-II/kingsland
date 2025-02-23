@@ -32,6 +32,7 @@ import Contact from "@/components/Contact";
 import FunFact from "@/components/FunFact";
 import CTA from "@/components/CTA";
 import FeaturesTab from "@/components/FeaturesTab";
+import SectionDowloadApp from "./(home)/SectionDowloadApp";
 
 const DEMO_CATS: TaxonomyType[] = [
   {
@@ -238,6 +239,8 @@ function PageHome() {
         <FeaturesTab /> 
     
         <Blog />
+
+        <SectionDowloadApp />
 
         <Contact />
       </div>
