@@ -27,14 +27,11 @@ import Hero from "@/components/Hero";
 import Video from "@/components/Video";
 import Brands from "@/components/Brands";
 import AboutSectionOne from "@/components/About/AboutSectionOne";
-import Pricing from "@/components/Pricing";
 import Blog from "@/components/Blog";
 import Contact from "@/components/Contact";
 import FunFact from "@/components/FunFact";
 import CTA from "@/components/CTA";
 import FeaturesTab from "@/components/FeaturesTab";
-
-export const estImgs = [imgPng1,imgPng2,imgPng3,imgPng4,imgPng5,imgPng6,imgPng7,imgPng1,imgPng3]
 
 const DEMO_CATS: TaxonomyType[] = [
   {
