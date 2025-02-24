@@ -1,6 +1,6 @@
 "use client";
 
-import React, { FC, useEffect, useRef, useState } from "react";
+import React, { FC, RefObject, useEffect, useRef, useState } from "react";
 import Logo from "@/shared/Logo";
 import useOutsideAlerter from "@/hooks/useOutsideAlerter";
 import NotifyDropdown from "./NotifyDropdown";
@@ -28,18 +28,18 @@ if (typeof window !== "undefined") {
 
 const Header3: FC<Header3Props> = ({ className = "" }) => {
   const [showSearch, setShowSearch] = useState(false);
-  const headerInnerRef = useRef<HTMLDivElement>(null);
+  const headerInnerRef = useRef<HTMLDivElement | null>(null);
   //
   const [showHeroSearch, setShowHeroSearch] =
     useState<StaySearchFormFields | null>();
   //
   const [currentTab, setCurrentTab] = useState<SearchTab>("Search panel");
-
   //
-  useOutsideAlerter(headerInnerRef, () => {
+  useOutsideAlerter(headerInnerRef as RefObject<HTMLDivElement>, () => {
     setShowHeroSearch(null);
     setCurrentTab("Search panel");
   });
+    
 
   let pathname = usePathname();
   //
