@@ -2,6 +2,7 @@
 
 import React, { FC, Fragment, ReactNode, useEffect, useState } from "react";
 import { Dialog, Transition } from "@headlessui/react";
+import { motion } from "motion/react";
 import ButtonClose from "@/shared/ButtonClose";
 import Button from "@/shared/Button";
 
@@ -69,7 +70,7 @@ const NcModal: FC<NcModalProps> = ({
               leaveFrom="opacity-100"
               leaveTo="opacity-0"
             >
-              <Dialog.Overlay className="fixed inset-0 bg-neutral-900 bg-opacity-50 dark:bg-opacity-80" />
+              <motion.div className="fixed inset-0 bg-neutral-900 bg-opacity-50 dark:bg-opacity-80" />
             </Transition.Child>
 
             {/* This element is to trick the browser into centering the modal contents. */}

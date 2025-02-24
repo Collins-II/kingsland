@@ -1,7 +1,8 @@
 "use client";
 
 import React, { Dispatch, Fragment, SetStateAction, useEffect, useState } from "react";
-import { Dialog, Popover, Transition } from "@headlessui/react";
+import { Dialog, Popover, Transition, TransitionChild } from "@headlessui/react";
+import { motion } from "motion/react";
 import NcInputNumber from "@/components/NcInputNumber";
 import ButtonPrimary from "@/shared/ButtonPrimary";
 import ButtonThird from "@/shared/ButtonThird";
@@ -486,7 +487,7 @@ useEffect(() => {
                 leaveFrom="opacity-100"
                 leaveTo="opacity-0"
               >
-                <Dialog.Overlay className="fixed inset-0 bg-black bg-opacity-40 dark:bg-opacity-60" />
+                <motion.div className="fixed inset-0 bg-black bg-opacity-40 dark:bg-opacity-60" />
               </Transition.Child>
 
               {/* This element is to trick the browser into centering the modal contents. */}
@@ -496,7 +497,7 @@ useEffect(() => {
               >
                 &#8203;
               </span>
-              <Transition.Child
+              <TransitionChild
                 className="inline-block py-8 px-2 h-screen w-full max-w-4xl"
                 enter="ease-out duration-300"
                 enterFrom="opacity-0 scale-95"
@@ -572,7 +573,7 @@ useEffect(() => {
                     </ButtonPrimary>
                   </div>
                 </div>
-              </Transition.Child>
+              </TransitionChild>
             </div>
           </Dialog>
         </Transition>
@@ -598,7 +599,7 @@ useEffect(() => {
             onClose={closeModalMoreFilterMobile}
           >
             <div className="min-h-screen text-center">
-              <Transition.Child
+              <TransitionChild
                 as={Fragment}
                 enter="ease-out duration-300"
                 enterFrom="opacity-0"
@@ -607,8 +608,8 @@ useEffect(() => {
                 leaveFrom="opacity-100"
                 leaveTo="opacity-0"
               >
-                <Dialog.Overlay className="fixed inset-0 bg-black bg-opacity-40 dark:bg-opacity-60" />
-              </Transition.Child>
+                <motion.div className="fixed inset-0 bg-black bg-opacity-40 dark:bg-opacity-60" />
+              </TransitionChild>
 
               {/* This element is to trick the browser into centering the modal contents. */}
               <span
