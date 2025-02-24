@@ -67,7 +67,7 @@ const Hero = () => {
         </motion.p>
 
       
-        <motion.form
+        {/*<motion.form
           onSubmit={handleSubmit}
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -81,7 +81,7 @@ const Hero = () => {
           >
             Get Started
           </button>
-        </motion.form>
+        </motion.form> */}
       </motion.div>
     </section>
     </>
