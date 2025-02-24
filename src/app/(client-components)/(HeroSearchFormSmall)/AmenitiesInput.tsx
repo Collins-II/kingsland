@@ -31,7 +31,7 @@ const AmenitiesInput: FC<AmenitiesInputProps> = ({
   placeholder = "Select Amenities",
   className = "",
 }) => {
-  const containerRef = useRef<HTMLDivElement>(null);
+  const containerRef = useRef<HTMLDivElement>(null) as React.RefObject<HTMLDivElement>;
   const [showPopover, setShowPopover] = useState(false);
   const [search, setSearch] = useState("");
 
