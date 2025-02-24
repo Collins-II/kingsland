@@ -68,7 +68,7 @@ const MainNav2: FC<MainNav2Props> = ({ className = "" }) => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.3, ease: "easeInOut" }}
-            className="self-center lg:hidden flex-[3] max-w-lg !mx-auto md:px-3 pb-2"
+            //className="self-center lg:hidden flex-[3] max-w-lg !mx-auto md:px-3 pb-2"
           >
             <HeroSearchForm2MobileFactory />
           </motion.div>
