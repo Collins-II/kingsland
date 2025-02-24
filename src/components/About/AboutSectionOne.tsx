@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import SectionTitle from "../Common/SectionTitle";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 
 import aboutImg from "../../images/ests/est_6.jpg";
 import aboutImg1 from "../../images/ests/est_4.jpg";

@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence } from "motion/react";
 import { CheckIcon, MagnifyingGlassIcon, XMarkIcon } from "@heroicons/react/24/outline";
 import PriceRangeInput from "../(HeroSearchForm2Mobile)/(real-estate-search-form)/PriceRangeInput";
 import { formatNumberWithCommas } from "@/utils/formatNumberWithCommas";
@@ -135,6 +135,7 @@ export default function EstateSearch() {
 
       {/* Search Button */}
       <button
+        aria-label="search"
         className="w-full flex gap-4 items-center justify-center mt-5 bg-blue-600 text-white px-3 py-2 rounded-full transition hover:bg-blue-700"
         onClick={() => alert("Searching...")}
       >

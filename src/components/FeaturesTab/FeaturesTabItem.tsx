@@ -5,7 +5,7 @@ import Image from "next/image";
 import { useSelector } from "react-redux";
 import { useConvertPrice } from "@/utils/CurrencyStore/currency-utils";
 import { RootState } from "@/utils/CurrencyStore/store";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 import Badge from "@/shared/Badge";
 import { formatNumberWithCommas } from "@/utils/formatNumberWithCommas";
 

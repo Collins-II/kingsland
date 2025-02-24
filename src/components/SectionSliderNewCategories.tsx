@@ -6,7 +6,7 @@ import CardCategory3 from "@/components/CardCategory3";
 import CardCategory4 from "@/components/CardCategory4";
 import CardCategory5 from "@/components/CardCategory5";
 import Heading from "@/shared/Heading";
-import { AnimatePresence, motion, MotionConfig } from "framer-motion";
+import { AnimatePresence, motion, MotionConfig } from "motion/react";
 import { useSwipeable } from "react-swipeable";
 import PrevBtn from "./PrevBtn";
 import NextBtn from "./NextBtn";

@@ -12,7 +12,7 @@ import clientSay6 from "@/images/clientSay6.png";
 import quotationImg from "@/images/quotation.png";
 import quotationImg2 from "@/images/quotation2.png";
 import { MapPinIcon } from "@heroicons/react/24/outline";
-import { AnimatePresence, motion, MotionConfig } from "framer-motion";
+import { AnimatePresence, motion, MotionConfig } from "motion/react";
 import Image from "next/image";
 import { useSwipeable } from "react-swipeable";
 import { variants } from "@/utils/animationVariants";
@@ -173,6 +173,7 @@ const SectionClientSay: FC<SectionClientSayProps> = ({
               <div className="mt-10 flex items-center justify-center space-x-2">
                 {data.map((item, i) => (
                   <button
+                    title="client"
                     className={`w-2 h-2 rounded-full ${
                       i === index ? "bg-black/70" : "bg-black/10 "
                     }`}

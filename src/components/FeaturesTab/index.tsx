@@ -4,7 +4,7 @@ import { useState } from "react";
 import FeaturesTabItem from "./FeaturesTabItem";
 import {featuresTabData} from "./featuresTabData";
 
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 import TabMenu from "./tabMenu";
 
 const FeaturesTab = () => {

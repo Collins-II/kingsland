@@ -15,7 +15,7 @@ import { ArrowRightIcon, MagnifyingGlassIcon } from "@heroicons/react/24/outline
 import LangDropdown from "./LangDropdownSingle";
 import CurrencyDropdown from "./CurrencyDropdown";
 import TemplatesDropdown from "./TemplatesDropdown";
-import {motion, AnimatePresence } from "framer-motion";
+import {motion, AnimatePresence } from "motion/react";
 
 interface Header3Props {
   className?: string;

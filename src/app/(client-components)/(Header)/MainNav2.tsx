@@ -1,7 +1,7 @@
 "use client";
 
 import React, { FC, useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence } from "motion/react";
 import Logo from "@/shared/Logo";
 import MenuBar from "@/shared/MenuBar";
 import LangDropdown from "./LangDropdownSingle";
