@@ -25,7 +25,7 @@ const LocationInput: FC<LocationInputProps> = ({
   className = "nc-flex-1.5",
   divHideVerticalLineClass = "left-10 -right-0.5",
 }) => {
-  const containerRef = useRef<HTMLDivElement>(null);
+  const containerRef = useRef<HTMLDivElement>(null) as React.RefObject<HTMLDivElement>;
   const inputRef = useRef<HTMLInputElement>(null);
 
   const [value, setValue] = useState("");

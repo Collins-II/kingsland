@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React, { createRef, useEffect, useState } from "react";
 import { FC } from "react";
 import ClearDataButton from "./ClearDataButton";
 import ButtonSubmit from "./ButtonSubmit";
@@ -22,7 +22,7 @@ const GuestsInput: FC<GuestsInputProps> = ({
   autoFocus = false,
   submitLink,
 }) => {
-  const refContainer = React.createRef<HTMLDivElement>();
+  const refContainer = createRef<HTMLDivElement>() as React.RefObject<HTMLDivElement>;
   const [isOpen, setIsOpen] = useState(false);
   useOutsideAlerter(refContainer, () => setIsOpen(false));
 
