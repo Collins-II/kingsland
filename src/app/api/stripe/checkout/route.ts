@@ -1,7 +1,10 @@
 import { NextResponse } from "next/server";
 import Stripe from "stripe";
 
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY as string, {
+const STRIPE_SECRET_KEY="sk_test_51Nqv1pAj1uexx0eAqzmCd5zVCWduyEKmbxEyKE9liLP1IeQ4HetFP0tKmece4FxHjrhrmNOgakgUSoczBtRsYhj700DiwG6Wzy"
+const NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY="pk_test_51Nqv1pAj1uexx0eAqpKbGGGvWql9OtXwDZrcS9WFdsX5VpdpLR7DoIhkYvVHY1xdEz33mLs8zuGcTqrP5ZM8jnG8003qXqFPTM"
+
+const stripe = new Stripe(STRIPE_SECRET_KEY as string, {
   apiVersion: "2025-01-27.acacia",
 });
 
