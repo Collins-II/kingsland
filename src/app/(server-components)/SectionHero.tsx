@@ -4,7 +4,6 @@ import HeroSearchForm from "../(client-components)/(HeroSearchForm)/HeroSearchFo
 import Image from "next/image";
 import ButtonPrimary from "@/shared/ButtonPrimary";
 import { PHOTOS } from "../(listing-detail)/listing-stay-detail/constant";
-import { estImgs } from "../[locale]/page";
 
 export interface SectionHeroProps {
   className?: string;
@@ -37,13 +36,13 @@ const SectionHero: FC<SectionHeroProps> = ({ className = "" }) => {
             <Image
               fill
               className="object-cover rounded-md sm:rounded-xl"
-              src={estImgs[0]}
+              src={PHOTOS[0]}
               alt=""
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
             />
             <div className="absolute inset-0 bg-neutral-900 bg-opacity-20 opacity-0 hover:opacity-100 transition-opacity"></div>
           </div>
-          {estImgs.filter((_, i) => i >= 1 && i < 9).map((item, index) => (
+          {PHOTOS.filter((_, i) => i >= 1 && i < 9).map((item, index) => (
             <div
               key={index}
               className={`relative rounded-md sm:rounded-xl overflow-hidden ${
