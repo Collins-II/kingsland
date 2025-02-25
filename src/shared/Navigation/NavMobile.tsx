@@ -13,6 +13,7 @@ import SwitchDarkMode from "@/shared/SwitchDarkMode";
 import Link from "next/link";
 import LangDropdown from "@/app/(client-components)/(Header)/LangDropdownSingle";
 import CurrencyDropdown from "@/app/(client-components)/(Header)/CurrencyDropdown";
+import { Route } from "next";
 
 export interface NavMobileProps {
   data?: NavItemType[];
@@ -27,7 +28,7 @@ const NavMobile: React.FC<NavMobileProps> = ({
     return (
       <ul className="nav-mobile-sub-menu pl-6 pb-1 text-base">
         {item.children?.map((i, index) => (
-          <Disclosure key={i.href + index} as="li">
+          <Disclosure key={i.href as Route + index} as="li">
             <Link
               href={{
                 pathname: i.href || undefined,
