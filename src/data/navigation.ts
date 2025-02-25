@@ -204,23 +204,23 @@ export const NAVIGATION_DEMO: NavItemType[] = [
       //
       {
         id: ncNanoId(),
-        href: "/listing-experiences",
+        href: "/listing-stay",
         name: "Experiences listings",
         type: "dropdown",
         children: [
           {
             id: ncNanoId(),
-            href: "/listing-experiences",
+            href: "/listing-stay",
             name: "Experiences page",
           },
           {
             id: ncNanoId(),
-            href: "/listing-experiences-map",
+            href: "/listing-stay-map",
             name: "Experiences page (map)",
           },
           {
             id: ncNanoId(),
-            href: "/listing-experiences-detail",
+            href: "/listing-stay-detail",
             name: "Experiences Detail",
           },
         ],
@@ -229,31 +229,31 @@ export const NAVIGATION_DEMO: NavItemType[] = [
       //
       {
         id: ncNanoId(),
-        href: "/listing-car",
+        href: "/listing-stay",
         name: "Cars listings",
         type: "dropdown",
         children: [
-          { id: ncNanoId(), href: "/listing-car", name: "Cars page" },
-          { id: ncNanoId(), href: "/listing-car-map", name: "Cars page (map)" },
-          { id: ncNanoId(), href: "/listing-car-detail", name: "Car Detail" },
+          { id: ncNanoId(), href: "/listing-stay", name: "Cars page" },
+          { id: ncNanoId(), href: "/listing-stay-map", name: "Cars page (map)" },
+          { id: ncNanoId(), href: "/listing-stay-detail", name: "Car Detail" },
         ],
       },
 
       //
       {
         id: ncNanoId(),
-        href: "/listing-real-estate",
+        href: "/listing-stay",
         name: "Real Estate Listings",
         type: "dropdown",
         children: [
           {
             id: ncNanoId(),
-            href: "/listing-real-estate",
+            href: "/listing-stay",
             name: "Real Estate Listings",
           },
           {
             id: ncNanoId(),
-            href: "/listing-real-estate-map",
+            href: "/listing-stay-map",
             name: "Real Estate Maps",
           },
         ],
@@ -261,7 +261,7 @@ export const NAVIGATION_DEMO: NavItemType[] = [
       //
       {
         id: ncNanoId(),
-        href: "/listing-flights",
+        href: "/listing-stay",
         name: "Flights listings",
       },
     ],
@@ -310,45 +310,45 @@ export const NAVIGATION_DEMO_2: NavItemType[] = [
       //
       {
         id: ncNanoId(),
-        href: "/listing-experiences",
+        href: "/listing-stay",
         name: "Experiences listings",
       },
       {
         id: ncNanoId(),
-        href: "/listing-experiences-map",
+        href: "/listing-stay-map",
         name: "Experiences (map)",
       },
       {
         id: ncNanoId(),
-        href: "/listing-experiences-detail",
+        href: "/listing-stay-detail",
         name: "Experiences detail",
       },
     ],
   },
   {
     id: ncNanoId(),
-    href: "/listing-car",
+    href: "/listing-stay",
     name: "Listing pages",
     children: [
-      { id: ncNanoId(), href: "/listing-car", name: "Cars listings" },
-      { id: ncNanoId(), href: "/listing-car-map", name: "Cars listings (map)" },
-      { id: ncNanoId(), href: "/listing-car-detail", name: "Car detail" },
+      { id: ncNanoId(), href: "/listing-stay", name: "Cars listings" },
+      { id: ncNanoId(), href: "/listing-stay-map", name: "Cars listings (map)" },
+      { id: ncNanoId(), href: "/listing-stay-detail", name: "Car detail" },
 
       //
       {
         id: ncNanoId(),
-        href: "/listing-real-estate",
+        href: "/listing-stay",
         name: "Real estate listings",
       },
       {
         id: ncNanoId(),
-        href: "/listing-real-estate-map",
+        href: "/listing-stay-map",
         name: "Real estate (map)",
       },
       //
       {
         id: ncNanoId(),
-        href: "/listing-flights",
+        href: "/listing-stay",
         name: "Flights listings",
       },
     ],
@@ -374,17 +374,17 @@ export const NAVIGATION_DEMO_2: NavItemType[] = [
 ];
 
 
-export const NAVIGATION_DATA: NavItemType[] = [
+export const NAVIGATION_DATA = [
   {
     id: ncNanoId(),
     name: "Properties",
     children: [
-      { id: ncNanoId(), href: "/properties", name: "All Properties" },
-      { id: ncNanoId(), href: "/properties/luxury", name: "Luxury Homes" },
-      { id: ncNanoId(), href: "/properties/apartments", name: "Apartments" },
-      { id: ncNanoId(), href: "/properties/houses", name: "Houses" },
-      { id: ncNanoId(), href: "/properties/commercial", name: "Commercial Spaces" },
-      { id: ncNanoId(), href: "/properties/land", name: "Land & Plots" },
+      { id: ncNanoId(), href: "/", name: "All Properties" },
+      { id: ncNanoId(), href: "/", name: "Luxury Homes" },
+      { id: ncNanoId(), href: "/", name: "Apartments" },
+      { id: ncNanoId(), href: "/", name: "Houses" },
+      { id: ncNanoId(), href: "/", name: "Commercial Spaces" },
+      { id: ncNanoId(), href: "/", name: "Land & Plots" },
     ],
   },
 
@@ -392,7 +392,7 @@ export const NAVIGATION_DATA: NavItemType[] = [
     id: ncNanoId(),
     name: "Services",
     children: [
-      { id: ncNanoId(), href: "/services/property-management", name: "Property Management" },
+      { id: ncNanoId(), href: "/", name: "Property Management" },
       { id: ncNanoId(), href: "/services/mortgage", name: "Mortgage Services" },
       { id: ncNanoId(), href: "/services/legal", name: "Legal & Documentation" },
       { id: ncNanoId(), href: "/services/interior-design", name: "Interior Design" },
