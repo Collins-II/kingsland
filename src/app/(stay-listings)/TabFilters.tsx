@@ -141,7 +141,7 @@ const TabFilters = ({data, setFilteredData}: TabProps) => {
   const convertPrice = useConvertPrice();
   const dispatch = useAppDispatch();
   const priceRange = useAppSelector((state) => state.filters.priceRange) || [0, 1000];
-  const {bedrooms, bathrooms , propertyType, amenities} = useAppSelector((state) => state.filters)
+  const {bedrooms, bathrooms , propertyType, amenities} = useAppSelector((state) => state.filters) as any
 
   const [isOpenMoreFilter, setisOpenMoreFilter] = useState(false);
   const [isOpenMoreFilterMobile, setisOpenMoreFilterMobile] = useState(false);
@@ -498,7 +498,6 @@ useEffect(() => {
                 &#8203;
               </span>
               <TransitionChild
-                className="inline-block py-8 px-2 h-screen w-full max-w-4xl"
                 enter="ease-out duration-300"
                 enterFrom="opacity-0 scale-95"
                 enterTo="opacity-100 scale-100"
@@ -506,6 +505,7 @@ useEffect(() => {
                 leaveFrom="opacity-100 scale-100"
                 leaveTo="opacity-0 scale-95"
               >
+                <div className="inline-block py-8 px-2 h-screen w-full max-w-4xl">
                 <div className="inline-flex flex-col w-full max-w-4xl text-left align-middle transition-all transform overflow-hidden rounded-2xl bg-white dark:bg-neutral-900 dark:border dark:border-neutral-700 dark:text-neutral-100 shadow-xl h-full">
                   <div className="relative flex-shrink-0 px-6 py-4 border-b border-neutral-200 dark:border-neutral-800 text-center">
                     <Dialog.Title
@@ -573,6 +573,7 @@ useEffect(() => {
                     </ButtonPrimary>
                   </div>
                 </div>
+                </div>
               </TransitionChild>
             </div>
           </Dialog>
@@ -618,8 +619,7 @@ useEffect(() => {
               >
                 &#8203;
               </span>
-              <Transition.Child
-                className="inline-block py-8 px-2 h-screen w-full max-w-4xl"
+              <TransitionChild
                 enter="ease-out duration-300"
                 enterFrom="opacity-0 scale-95"
                 enterTo="opacity-100 scale-100"
@@ -627,6 +627,7 @@ useEffect(() => {
                 leaveFrom="opacity-100 scale-100"
                 leaveTo="opacity-0 scale-95"
               >
+                <div className="inline-block py-8 px-2 h-screen w-full max-w-4xl">
                 <div className="inline-flex flex-col w-full max-w-4xl text-left align-middle transition-all transform overflow-hidden rounded-2xl bg-white dark:bg-neutral-900 dark:border dark:border-neutral-700 dark:text-neutral-100 shadow-xl h-full">
                   <div className="relative flex-shrink-0 px-6 py-4 border-b border-neutral-200 dark:border-neutral-800 text-center">
                     <Dialog.Title
@@ -778,7 +779,8 @@ useEffect(() => {
                     </ButtonPrimary>
                   </div>
                 </div>
-              </Transition.Child>
+                </div>
+              </TransitionChild>
             </div>
           </Dialog>
         </Transition>
