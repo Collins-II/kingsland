@@ -24,10 +24,10 @@ const Footer = () => {
         <div>
           <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Explore</h3>
           <ul className="mt-2 space-y-2">
-            <li><Link href="/buy" className="hover:underline">Buy</Link></li>
-            <li><Link href="/rent" className="hover:underline">Rent</Link></li>
-            <li><Link href="/sell" className="hover:underline">Sell</Link></li>
-            <li><Link href="/mortgage" className="hover:underline">Mortgage</Link></li>
+            <li><Link href="/" className="hover:underline">Buy</Link></li>
+            <li><Link href="/" className="hover:underline">Rent</Link></li>
+            <li><Link href="/" className="hover:underline">Sell</Link></li>
+            <li><Link href="/" className="hover:underline">Mortgage</Link></li>
           </ul>
         </div>
 
@@ -35,9 +35,9 @@ const Footer = () => {
         <div>
           <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Legal</h3>
           <ul className="mt-2 space-y-2">
-            <li><Link href="/terms" className="hover:underline">Terms of Service</Link></li>
-            <li><Link href="/privacy" className="hover:underline">Privacy Policy</Link></li>
-            <li><Link href="/cookies" className="hover:underline">Cookie Policy</Link></li>
+            <li><Link href="/" className="hover:underline">Terms of Service</Link></li>
+            <li><Link href="/" className="hover:underline">Privacy Policy</Link></li>
+            <li><Link href="/" className="hover:underline">Cookie Policy</Link></li>
           </ul>
         </div>
         </div>
