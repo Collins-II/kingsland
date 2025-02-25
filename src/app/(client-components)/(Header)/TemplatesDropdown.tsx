@@ -7,6 +7,7 @@ import { NAVIGATION_DATA, NAVIGATION_DEMO_2 } from "@/data/navigation";
 import { NavItemType } from "@/shared/Navigation/NavigationItem";
 import Link from "next/link";
 import Collection from "@/components/Collection";
+import { Route } from "next";
 
 export default function TemplatesDropdown() {
   const [open, setOpen] = useState(false);
@@ -20,7 +21,7 @@ export default function TemplatesDropdown() {
         target={item.targetBlank ? "_blank" : undefined}
         rel="noopener noreferrer"
         className="font-normal text-slate-600 hover:text-black dark:text-slate-400 dark:hover:text-white"
-        href={item.href || ""}
+        href={item.href as Route}
         onClick={close}
       >
         {item.name}
