@@ -11,7 +11,6 @@ import Footer from "@/components/Footer";
 import FooterNav from "@/components/FooterNav";
 import ReduxProvider from "@/utils/CurrencyStore/CurrencyProvider";
 import ClientCommons from "./ClientCommons";
-import SiteHeader from "./(client-components)/(Header)/SiteHeader";
 import { useEffect, useState } from "react";
 import Script from "next/script";
 import clsx from "clsx";
