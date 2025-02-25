@@ -374,7 +374,7 @@ export const NAVIGATION_DEMO_2: NavItemType[] = [
 ];
 
 
-export const NAVIGATION_DATA = [
+export const NAVIGATION_DATA: NavItemType[] = [
   {
     id: ncNanoId(),
     name: "Properties",
@@ -382,7 +382,7 @@ export const NAVIGATION_DATA = [
       { id: ncNanoId(), href: "/", name: "All Properties" },
       { id: ncNanoId(), href: "/", name: "Luxury Homes" },
       { id: ncNanoId(), href: "/", name: "Apartments" },
-      { id: ncNanoId(), href: "/", name: "Houses" },
+      { id: ncNanoId(), href: "/s", name: "Houses" },
       { id: ncNanoId(), href: "/", name: "Commercial Spaces" },
       { id: ncNanoId(), href: "/", name: "Land & Plots" },
     ],
@@ -393,9 +393,9 @@ export const NAVIGATION_DATA = [
     name: "Services",
     children: [
       { id: ncNanoId(), href: "/", name: "Property Management" },
-      { id: ncNanoId(), href: "/services/mortgage", name: "Mortgage Services" },
-      { id: ncNanoId(), href: "/services/legal", name: "Legal & Documentation" },
-      { id: ncNanoId(), href: "/services/interior-design", name: "Interior Design" },
+      { id: ncNanoId(), href: "/", name: "Mortgage Services" },
+      { id: ncNanoId(), href: "/", name: "Legal & Documentation" },
+      { id: ncNanoId(), href: "/", name: "Interior Design" },
     ],
   },
 
@@ -403,8 +403,8 @@ export const NAVIGATION_DATA = [
     id: ncNanoId(),
     name: "Agents",
     children: [
-      { id: ncNanoId(), href: "/agents", name: "Our Agents" },
-      { id: ncNanoId(), href: "/agents/top-rated", name: "Top Rated Agents" },
+      { id: ncNanoId(), href: "/", name: "Our Agents" },
+      { id: ncNanoId(), href: "/", name: "Top Rated Agents" },
     ],
   },
 
@@ -413,9 +413,9 @@ export const NAVIGATION_DATA = [
     name: "About Us",
     children: [
       { id: ncNanoId(), href: "/about", name: "Company Overview" },
-      { id: ncNanoId(), href: "/about/team", name: "Our Team" },
-      { id: ncNanoId(), href: "/about/testimonials", name: "Testimonials" },
-      { id: ncNanoId(), href: "/about/careers", name: "Careers" },
+      { id: ncNanoId(), href: "/about", name: "Our Team" },
+      { id: ncNanoId(), href: "/about", name: "Testimonials" },
+      { id: ncNanoId(), href: "/about", name: "Careers" },
     ],
   },
 
@@ -425,10 +425,10 @@ export const NAVIGATION_DATA = [
     type: "dropdown",
     children: [
       { id: ncNanoId(), href: "/blog", name: "All Articles" },
-      { id: ncNanoId(), href: "/blog/buying-guide", name: "Buying Guide" },
-      { id: ncNanoId(), href: "/blog/investing", name: "Real Estate Investing" },
-      { id: ncNanoId(), href: "/blog/home-improvement", name: "Home Improvement" },
-      { id: ncNanoId(), href: "/blog/news", name: "Market News" },
+      { id: ncNanoId(), href: "/blog", name: "Buying Guide" },
+      { id: ncNanoId(), href: "/blog", name: "Real Estate Investing" },
+      { id: ncNanoId(), href: "/blog", name: "Home Improvement" },
+      { id: ncNanoId(), href: "/blog", name: "Market News" },
     ],
   },
 
