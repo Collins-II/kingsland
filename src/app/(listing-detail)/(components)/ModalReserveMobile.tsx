@@ -53,6 +53,7 @@ const ModalReserveMobile: FC<ModalReserveMobileProps> = ({
                   <>
                     <div className="absolute left-4 top-4">
                       <button
+                        aria-label="close button"
                         className="focus:outline-none focus:ring-0"
                         onClick={closeModal}
                       >
