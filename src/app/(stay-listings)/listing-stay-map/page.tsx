@@ -8,6 +8,8 @@ export interface ListingStayMapPageProps {
 
 const DEMO_STAYS = DEMO_STAY_LISTINGS
 
+export const dynamic = "force-dynamic"; // Temporary fix for debugging
+
 const ListingStayMapPage: FC<ListingStayMapPageProps> = ({}) => {
 
      // const listing = DEMO_STAYS.find((c) => c.id === params.mapId);

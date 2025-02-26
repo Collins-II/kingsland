@@ -24,14 +24,16 @@ import SectionDateRange from "./../SectionDateRange";
 import { Route } from "next";
 import StripeButton from "@/components/StripeButton";
 
+export const dynamic = "force-dynamic"; // Temporary fix for debugging
+
 export interface ListingStayDetailPageProps {}
 
-const ListingStayDetailPage: FC<ListingStayDetailPageProps> = ({}) => {
+const ListingStayDetailPage = () => {
   //
 
   let [isOpenModalAmenities, setIsOpenModalAmenities] = useState(false);
 
-  const thisPathname = usePathname();
+  const thisPathname = usePathname() ?? "/listing-stay-detail"; // ✅ Ensure fallback value
   const router = useRouter();
 
   function closeModalAmenities() {
@@ -43,7 +45,7 @@ const ListingStayDetailPage: FC<ListingStayDetailPageProps> = ({}) => {
   }
 
   const handleOpenModalImageGallery = () => {
-    router.push(`${thisPathname}/?modal=PHOTO_TOUR_SCROLLABLE` as Route);
+    router.push(`${thisPathname}/?modal=PHOTO_TOUR_SCROLLABLE` as unknown as Route);
   };
 
   const renderSection1 = () => {
