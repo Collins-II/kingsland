@@ -8,7 +8,7 @@ const CTA = () => {
     <>
       {/* <!-- ===== Kingsland City Estates CTA Start ===== --> */}
       <section className="overflow-hidden 2xl:px-0">
-        <div className="max-w-c-1390 rounded-lg bg-gradient-to-t from-[#E6F7FF] to-[#B3E5FC] px-7.5 py-12.5 dark:bg-blacksection dark:bg-gradient-to-t dark:from-transparent dark:to-transparent dark:stroke-strokedark md:px-12.5 xl:px-17.5 xl:py-0">
+        <div className="max-w-c-1390 rounded-lg bg-gradient-to-t from-[#121212] to-[#1B365D] px-7.5 py-12.5  md:px-12.5 xl:px-17.5 xl:py-0">
           <div className="flex flex-wrap gap-8 md:flex-nowrap md:items-center md:justify-between md:gap-0">
             <motion.div
               variants={{
@@ -21,10 +21,10 @@ const CTA = () => {
               viewport={{ once: true }}
               className="animate_left md:w-[70%] lg:w-1/2"
             >
-              <h2 className="mb-4 w-11/12 text-3xl font-bold text-black dark:text-white xl:text-sectiontitle4">
+              <h2 className="mb-4 w-11/12 text-3xl font-bold text-silverGray xl:text-sectiontitle4">
                 Invest & Secure Your Future
               </h2>
-              <p>
+              <p className="text-lightGray">
                 Your dream home or investment awaits.
               </p>
             </motion.div>
@@ -49,7 +49,7 @@ const CTA = () => {
                 />
                 <a
                   href="/contact"
-                  className="inline-flex items-center gap-2.5 rounded-full bg-black px-4 py-3 font-medium text-white hover:opacity-90 dark:bg-white dark:text-black"
+                  className="inline-flex items-center gap-2.5 rounded-full bg-gold px-4 py-3 font-medium text-white hover:opacity-90 "
                 >
                   Get in Touch
                   <Image
@@ -57,15 +57,16 @@ const CTA = () => {
                     height={20}
                     src="/images/icon/icon-arrow-dark.svg"
                     alt="Arrow"
-                    className="dark:hidden"
-                  />
-                  <Image
+                    className=""
+                  /> 
+                 {/* <Image
                     width={20}
                     height={20}
                     src="/images/icon/icon-arrow-light.svg"
                     alt="Arrow"
-                    className="hidden dark:block"
+                    className="block"
                   />
+                  */}
                 </a>
               </div>
             </motion.div>

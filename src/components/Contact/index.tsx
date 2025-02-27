@@ -12,12 +12,12 @@ const Contact = () => {
       <div className="listingSection__wrap">
         <div className="flex flex-wrap items-center">
           {/* Contact Form */}
-          <div className="z-10 w-full px-4 lg:w-7/12 xl:w-8/12">
+          <div className="z-10 w-full lg:w-7/12 xl:w-8/12">
             <div
               className="mb-12 rounded-lg bg-white dark:bg-gray-800 py-8 px-4"
               data-wow-delay=".15s"
             >
-              <h2 className="mb-3 text-3xl font-bold text-gray-900 dark:text-white sm:text-4xl">
+              <h2 className="mb-3 text-3xl font-bold text-silverGray sm:text-4xl">
                 Want To Visit? <br /> Open a Ticket
               </h2>
               <p className="mb-8 text-lg text-gray-600 dark:text-gray-300">
@@ -81,7 +81,7 @@ const Contact = () => {
 
                 {/* Submit Button */}
                 <div className="mt-6">
-                  <button aria-label="submit-button" className="w-full flex justify-center rounded-full shadow-sm bg-primary-600 px-6 py-3 text-lg font-bold text-white hover:text-primary-600 shadow-lg transition duration-300 hover:bg-white focus:outline-none focus:ring-2 focus:ring-primary-400">
+                  <button aria-label="submit-button" className="w-full flex justify-center rounded-full shadow-sm bg-gold px-6 py-3 text-lg font-bold text-white hover:text-gold shadow-lg transition duration-300 hover:bg-white focus:outline-none focus:ring-2 focus:ring-primary-400">
                       <ArrowRightIcon className="w-5 h-5" />
                   </button>
                 </div>

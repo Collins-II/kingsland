@@ -36,14 +36,14 @@ export default function VideoPlayer({url, title}: VideoProps) {
 
   return (
       <div
-        className="group aspect-w-16 aspect-h-16 sm:aspect-h-9 bg-neutral-800 rounded-lg overflow-hidden  sm:rounded-[50px] will-change-transform"
+        className="group aspect-w-16 aspect-h-16 sm:aspect-h-9 bg-neutral-800 overflow-hidden will-change-transform"
         title="Kingsland City's Central Park"
       >
         <video
           ref={videoRef}
           src={url}
           title={title}
-          className="w-full h-full object-contain"
+          className="w-full h-full object-cover"
           muted
           controls
           autoPlay

@@ -61,14 +61,14 @@ const TabMenu = ({ currentTab, setCurrentTab }: TabProps) => {
               onClick={() => setCurrentTab(tab.id)}
               className={`relative flex flex-col items-center justify-center mb-3 px-4 py-2 cursor-pointer rounded-xl transition-all ${
                 currentTab === tab.id
-                  ? "border-b-2 border-primary-600 text-primary-600"
+                  ? "border-b-2 border-gold "
                   : "border-b border-gray-300 bg-white dark:bg-gray-800 dark:text-gray-300"
               }`}
             >
               <div className="flex h-14 w-14 items-center justify-center rounded-full border bg-white dark:bg-gray-700 shadow-md">
                 <p className="text-lg font-bold">{tab.number}</p>
               </div>
-              <p className="mt-2 text-sm font-semibold">{tab.label}</p>
+              <p className="mt-2 text-sm font-semibold ">{tab.label}</p>
             </motion.div>
           </SwiperSlide>
         ))}
@@ -89,14 +89,14 @@ const TabMenu = ({ currentTab, setCurrentTab }: TabProps) => {
             onClick={() => setCurrentTab(tab.id)}
             className={`relative flex items-center gap-4 p-4 cursor-pointer border-b-[2px] transition-all ${
               currentTab === tab.id
-                ? "border-primary-500 "
+                ? "border-silverGray "
                 : "border-transparent text-gray-600 dark:text-gray-300"
             }`}
           >
             <div className="flex h-14 w-14 items-center justify-center rounded-full border border-stroke dark:border-strokedark dark:bg-blacksection">
-              <p className="text-lg font-semibold">{tab.number}</p>
+              <p className="text-lg font-semibold ">{tab.number}</p>
             </div>
-            <p className="text-sm font-semibold">{tab.label}</p>
+            <p className="text-sm font-semibold ">{tab.label}</p>
           </motion.div>
         ))}
       </div>

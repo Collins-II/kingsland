@@ -33,6 +33,7 @@ import FunFact from "@/components/FunFact";
 import CTA from "@/components/CTA";
 import FeaturesTab from "@/components/FeaturesTab";
 import SectionDowloadApp from "./(home)/SectionDowloadApp";
+import PropertyVideo from "@/components/Video";
 
 const DEMO_CATS: TaxonomyType[] = [
   {
@@ -204,7 +205,13 @@ function PageHome() {
             sliderStyle="style2"
           />
 
-          <Video />
+        <PropertyVideo
+          videoSrc="/videos/cityVid3.mp4" // Add a real estate video
+          title="Discover Luxury Living at Kingsland City"
+          description="Explore our premium estate properties with modern designs and breathtaking views."
+          buttonText="View Properties"
+          buttonLink="/properties"
+         />
 
   {/*
         <SectionSubscribe2 />
@@ -237,11 +244,7 @@ function PageHome() {
 
         <FunFact />*/}
         <FeaturesTab /> 
-    
         <Blog />
-
-        <SectionDowloadApp />
-
         <Contact />
       </div>
     </main>

@@ -32,7 +32,7 @@ const FeaturesTab = () => {
           </div>
 
           <div>
-          <h2 className="text-2xl font-semibold">Special Offers</h2>
+          <h2 className="text-2xl font-semibold text-silverGray">Premium Offers</h2>
           <span className="block mt-2 text-neutral-500 dark:text-neutral-400">
             {`Review of estate properties offered.`}
           </span>
@@ -62,7 +62,7 @@ const FeaturesTab = () => {
                 <div
                   className={`${
                     isMonthly ? "" : "translate-x-full"
-                  } shadow-switch-1 absolute left-0 top-[-4px] flex h-7 w-7 items-center justify-center rounded-full bg-primary-700 transition`}
+                  } shadow-switch-1 absolute left-0 top-[-4px] flex h-7 w-7 items-center justify-center rounded-full bg-silverGray transition`}
                 >
                   <span className="active h-4 w-4 rounded-full bg-white"></span>
                 </div>

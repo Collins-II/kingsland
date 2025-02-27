@@ -62,7 +62,7 @@ const SectionGridFeaturePlaces: FC<SectionGridFeaturePlacesProps> = ({
   return (
     <div className="nc-SectionGridFeaturePlaces relative">
       <div>
-          <h2 className="text-2xl font-semibold">Discover Our Properties </h2>
+          <h2 className="text-2xl font-semibold text-silverGray">Discover Our Properties </h2>
           <span className="block mt-2 text-neutral-500 dark:text-neutral-400">
             {`Find homes you can afford.`}
           </span>

@@ -3,6 +3,7 @@ import { TaxonomyType } from "@/data/types";
 import convertNumbThousand from "@/utils/convertNumbThousand";
 import Link from "next/link";
 import Image from "next/image";
+import Counter from "@/shared/Counter";
 
 export interface CardCategory5Props {
   className?: string;
@@ -21,9 +22,9 @@ const CardCategory5: FC<CardCategory5Props> = ({
       data-nc-id="CardCategory5"
     >
        <div>
-          <h2 className="text-1xl font-medium">{name}</h2>
-          <span className="block mt-2 text-sm text-neutral-500 dark:text-neutral-400">
-            {convertNumbThousand(count)} properties
+          <h2 className="text-1xl font-medium text-silverGray">{name}</h2>
+          <span className="block mt-2 text-sm text-silverGray">
+          <Counter from={0} duration={5} to={count as number} /> properties
           </span>
         </div>
         <div className="w-14 border-b border-neutral-200 dark:border-neutral-700 my-4"></div>

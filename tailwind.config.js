@@ -89,6 +89,11 @@ module.exports = {
         alabaster: "#FBFBFB",
         zumthor: "#EDF5FF",
         socialicon: "#D1D8E0",
+        gold: "#D4AF37",
+        navyBlue: "#1B365D",
+        darkGray: "#2E2E2E",
+        lightGray: "#E0E0E0",
+        silverGray: "#AFAFAF"
       },
       fontSize: {
         metatitle: ["12px", "20px"],

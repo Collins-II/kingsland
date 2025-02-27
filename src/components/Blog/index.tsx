@@ -29,8 +29,8 @@ const Blog = () => {
         <div>
           <div className="absolute bottom-0 inset-x-0 h-1/2 bg-gradient-to-t from-black"></div>
         </div>
-        <div className="flex flex-col justify-end items-start text-xs text-neutral-300 space-y-2.5 p-4">
-          <Badge name={post.postType?.toUpperCase()} />
+        <div className="flex flex-col justify-end items-start text-xs text-gold space-y-2.5 p-4">
+          <Badge color="yellow" name={post.postType?.toUpperCase()} />
           <h2 className="block text-lg font-semibold text-white ">
             <span className="line-clamp-2">{post.title}</span>
           </h2>
@@ -56,7 +56,7 @@ const Blog = () => {
     >
       <div className="">
         <div>
-          <h2 className="text-2xl font-semibold">Our Latest Blogs</h2>
+          <h2 className="text-2xl font-semibold text-silverGray">Our Latest Blogs</h2>
           <span className="block mt-2 text-neutral-500 dark:text-neutral-400">
             {`Find homes you can afford.`}
           </span>

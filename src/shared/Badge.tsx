@@ -13,7 +13,7 @@ export interface BadgeProps {
 const Badge: FC<BadgeProps> = ({
   className = "relative",
   name,
-  color = "blue",
+  color,
   href,
 }) => {
   const getColorClass = (hasHover = true) => {
