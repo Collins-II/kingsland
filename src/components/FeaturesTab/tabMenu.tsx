@@ -33,7 +33,7 @@ const TabMenu = ({ currentTab, setCurrentTab }: TabProps) => {
       whileInView="visible"
       transition={{ duration: 0.5, delay: 0.1 }}
       viewport={{ once: true }}
-      className="mt-5 mb-12 rounded-xl bg-white dark:border-strokedark dark:bg-blacksection dark:shadow-xl"
+      className="mt-5 mb-12 rounded-xl bg-neutral-100 dark:border-strokedark dark:bg-blacksection dark:shadow-xl"
     >
       {/* Mobile Slider */}
       <div className="block md:hidden relative w-full">
@@ -89,7 +89,7 @@ const TabMenu = ({ currentTab, setCurrentTab }: TabProps) => {
             onClick={() => setCurrentTab(tab.id)}
             className={`relative flex items-center gap-4 p-4 cursor-pointer border-b-[2px] transition-all ${
               currentTab === tab.id
-                ? "border-silverGray "
+                ? "border-gold "
                 : "border-transparent text-gray-600 dark:text-gray-300"
             }`}
           >

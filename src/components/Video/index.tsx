@@ -1,6 +1,4 @@
 "use client";
-
-import { useState, useRef } from "react";
 import { motion } from "motion/react";
 import VideoPlayer from "../video_player";
 
@@ -19,18 +17,6 @@ const PropertyVideo: React.FC<PropertyVideoProps> = ({
   buttonText = "View More",
   buttonLink = "/properties",
 }) => {
-  const [isPlaying, setIsPlaying] = useState(true);
-  const videoRef = useRef<HTMLVideoElement>(null);
-
-  const handleMouseEnter = () => {
-    videoRef.current?.play();
-    setIsPlaying(true);
-  };
-
-  const handleMouseLeave = () => {
-    videoRef.current?.pause();
-    setIsPlaying(false);
-  };
 
   return (
     <div >
@@ -44,8 +30,6 @@ const PropertyVideo: React.FC<PropertyVideoProps> = ({
     
     <div
       className="relative w-full h-auto md:h-[400px] lg:h-[500px] overflow-hidden rounded-2xl shadow-lg"
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
     >
       {/* Video */}
       <VideoPlayer

@@ -55,7 +55,7 @@ const FeaturesTabItem = ({
             />
             <Badge
               name={packageName}
-              className="absolute top-3 left-3 bg-gold text-white"
+              className="absolute top-3 left-3 bg-primary-500 text-white"
             />
           </div>
         )}

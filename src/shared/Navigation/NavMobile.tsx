@@ -38,7 +38,7 @@ const NavMobile: React.FC<NavMobileProps> = ({
               <span
                 className={`py-2.5 pr-3 ${!i.children ? "block w-full" : ""}`}
               >
-                {i.name}
+                · {i.name}
               </span>
               {i.children && (
                 <span
@@ -99,7 +99,7 @@ const NavMobile: React.FC<NavMobileProps> = ({
           )}
         </Link>
         {item.children && (
-          <Disclosure.Panel>{_renderMenuChild(item)}</Disclosure.Panel>
+          <Disclosure.Panel> {_renderMenuChild(item)}</Disclosure.Panel>
         )}
       </Disclosure>
     );
@@ -118,9 +118,9 @@ const NavMobile: React.FC<NavMobileProps> = ({
           <CurrencyDropdown />
         </div>
         </div>
-        <div className="flex flex-col mt-5 text-neutral-700 dark:text-neutral-300 text-sm">
+        <div className="flex flex-col mt-5 text-neutral-700 dark:text-neutral-300 text-md font-light ">
           <span>
-            Discover the most outstanding luxury properties on the market. Dream
+            Discover the most outstanding luxury properties on the market. Your dream
             home awaits.
           </span>
 
@@ -135,7 +135,7 @@ const NavMobile: React.FC<NavMobileProps> = ({
           <ButtonClose onClick={onClickClose} />
         </span>
       </div>
-      <ul className="flex flex-col py-6 px-2 space-y-1">
+      <ul className="flex flex-col py-6 px-2 space-y-1 border-[1px] border-silverGray rounded-xl m-2">
         {data.map(_renderItem)}
       </ul>
     </div>

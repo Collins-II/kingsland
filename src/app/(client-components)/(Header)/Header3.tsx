@@ -142,7 +142,7 @@ const Header3: FC<Header3Props> = ({ className = "" }) => {
           <div className="hidden lg:block self-center h-10 border-l border-neutral-300 dark:border-neutral-500"></div>
           <div className="hidden lg:flex space-x-3 items-center">
           <Link href="/listing-stay" className="">
-            <span className="flex gap-2 items-center font-light text-sm text-primary-600 hover:text-slate-900 dark:text-neutral-300 ">Properties <ArrowRightIcon className="w-4 h-4" /></span>
+            <span className="flex gap-2 items-center font-light text-sm text-gold hover:text-slate-900 dark:text-neutral-300 ">Properties <ArrowRightIcon className="w-4 h-4" /></span>
           </Link>
             <TemplatesDropdown />    
           </div>

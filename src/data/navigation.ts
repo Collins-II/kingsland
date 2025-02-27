@@ -379,12 +379,11 @@ export const NAVIGATION_DATA: NavItemType[] = [
     id: ncNanoId(),
     name: "Properties",
     children: [
-      { id: ncNanoId(), href: "/", name: "All Properties" },
-      { id: ncNanoId(), href: "/", name: "Luxury Homes" },
-      { id: ncNanoId(), href: "/", name: "Apartments" },
-      { id: ncNanoId(), href: "/s", name: "Houses" },
-      { id: ncNanoId(), href: "/", name: "Commercial Spaces" },
-      { id: ncNanoId(), href: "/", name: "Land & Plots" },
+      { id: ncNanoId(), href: "/listing-stay", name: "All Properties" },
+      { id: ncNanoId(), href: "/listing-stay", name: "Luxury Homes" },
+      { id: ncNanoId(), href: "/listing-stay", name: "Apartments" },
+      { id: ncNanoId(), href: "/listing-stay", name: "Houses" },
+      { id: ncNanoId(), href: "/listing-stay", name: "Commercial Spaces" },
     ],
   },
 

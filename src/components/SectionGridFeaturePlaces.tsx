@@ -8,6 +8,7 @@ import HeaderFilter from "./HeaderFilter";
 import StayCard from "./StayCard";
 import StayCard2 from "./StayCard2";
 import SectionTitle from "./Common/SectionTitle";
+import ButtonSecondary from "@/shared/ButtonSecondary";
 
 // OTHER DEMO WILL PASS PROPS
 const DEMO_DATA: StayDataType[] = DEMO_STAY_LISTINGS;
@@ -22,7 +23,7 @@ export interface SectionGridFeaturePlacesProps {
   cardType?: "card1" | "card2";
 }
 
-const ITEMS_PER_PAGE = 8; // Number of items to show initially and per load
+const ITEMS_PER_PAGE = 9; // Number of items to show initially and per load
 
 const SectionGridFeaturePlaces: FC<SectionGridFeaturePlacesProps> = ({
   stayListings = DEMO_DATA,
@@ -71,13 +72,13 @@ const SectionGridFeaturePlaces: FC<SectionGridFeaturePlacesProps> = ({
         <div className="listingSection__wrap">
         
       <div
-        className={`grid gap-6 md:gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 ${gridClass}`}
+        className={`grid gap-6 md:gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 ${gridClass}`}
       >
         {stayListings.slice(0, visibleCount).map((stay) => renderCard(stay))}
       </div>
       {!allItemsLoaded && (
         <div className="flex mt-16 justify-center items-center">
-          <ButtonPrimary onClick={handleLoadMore}>Show me more</ButtonPrimary>
+          <ButtonSecondary onClick={handleLoadMore}>Show me more</ButtonSecondary>
         </div>
       )}
       </div>

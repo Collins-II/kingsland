@@ -8,7 +8,7 @@ const NewsLatterBox = () => {
   const { theme } = useTheme();
 
   return (
-    <div className="relative z-10 rounded-lg p-8 bg-gradient-to-t from-[#121212] to-[#1B365D] sm:p-11 lg:p-8 xl:p-11">
+    <div className="relative z-10 rounded-lg p-8 bg-gradient-to-t from-[#121212] to-[#1B365D] sm:p-4 lg:p-8 xl:p-11">
       {/* Heading */}
       <h3 className="mb-4 text-2xl font-bold leading-tight text-gold">
         Subscribe to receive future updates

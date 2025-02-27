@@ -15,7 +15,7 @@ const MAGAZINE1_POSTS = POSTS.filter((_, i) => i >= 0 && i < 8);
 
 const BlogPage: React.FC = () => {
   return (
-    <div className="nc-BlogPage overflow-hidden relative">
+    <div className="nc-BlogPage overflow-hidden relative pb-3">
       {/* ======== BG GLASS ======== */}
       <BgGlassmorphism />
       {/* ======== ALL SECTIONS ======== */}
@@ -29,11 +29,11 @@ const BlogPage: React.FC = () => {
         {/* === SECTION 1 === */}
         <SectionAds />
 
-        {/* === SECTION 8 === */}
-        <SectionLatestPosts className="py-16 lg:py-28" />
+        {/* === SECTION 8 === 
+        <SectionLatestPosts className="py-16 lg:py-28" /> */}
 
-        {/* === SECTION 1 === */}
-        <SectionSubscribe2 className="pb-16 lg:pb-28" />
+        {/* === SECTION 1 ===
+        <SectionSubscribe2 className="pb-16 lg:pb-28" />  */}
       </div>
     </div>
   );

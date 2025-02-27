@@ -70,7 +70,7 @@ export default function StripeButton({price}:ButtonProps) {
      <button
      onClick={handleCheckout}
      disabled={loading}
-     className="w-full flex justify-center rounded-full bg-red-600 px-6 py-3 text-lg font-bold text-white hover:text-primary-600 shadow-lg transition duration-300 hover:bg-neutral-200 focus:outline-none focus:ring-2 focus:ring-primary-400">
+     className="w-full flex justify-center rounded-full bg-gold px-6 py-3 text-lg font-bold text-white hover:text-primary-600 shadow-lg transition duration-300 hover:bg-neutral-200 focus:outline-none focus:ring-2 focus:ring-primary-400">
         {loading ? _renderLoading() : <ArrowRightIcon className="w-5 h-5" />} 
      </button>
   );
