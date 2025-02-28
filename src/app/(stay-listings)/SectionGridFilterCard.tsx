@@ -32,7 +32,7 @@ const SectionGridFilterCard: FC<SectionGridFilterCardProps> = ({
   
   return (
     <div
-      className={`nc-SectionGridFilterCard ${className} xl:px-8 pt-14`}
+      className={`nc-SectionGridFilterCard ${className} xl:px-8 pt-4`}
       data-nc-id="SectionGridFilterCard"
     >
       <Heading2 className="!mb-8"/>

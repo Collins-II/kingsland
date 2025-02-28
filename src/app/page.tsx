@@ -41,7 +41,7 @@ const DEMO_CATS: TaxonomyType[] = [
     href: "/listing-stay-map",
     name: "Lusaka",
     taxonomy: "category",
-    count: 188288,
+    count: 188,
     thumbnail: imgPng1 as any ,
   },
   {
@@ -49,7 +49,7 @@ const DEMO_CATS: TaxonomyType[] = [
     href: "/listing-stay-map",
     name: "Kafue",
     taxonomy: "category",
-    count: 188288,
+    count: 18,
     thumbnail:
     imgPng2 as any,
   },
@@ -58,7 +58,7 @@ const DEMO_CATS: TaxonomyType[] = [
     href: "/listing-stay-map",
     name: "Chingola",
     taxonomy: "category",
-    count: 188288,
+    count: 288,
     thumbnail:
     imgPng3 as any,
   },
@@ -67,7 +67,7 @@ const DEMO_CATS: TaxonomyType[] = [
     href: "/listing-stay-map",
     name: "Mansa",
     taxonomy: "category",
-    count: 188288,
+    count: 548,
     thumbnail:
     imgPng4 as any,
   },
@@ -76,7 +76,7 @@ const DEMO_CATS: TaxonomyType[] = [
     href: "/listing-stay-map",
     name: "Livingstone",
     taxonomy: "category",
-    count: 188288,
+    count: 178,
     thumbnail:
     imgPng5 as any,
   },
@@ -85,7 +85,7 @@ const DEMO_CATS: TaxonomyType[] = [
     href: "/listing-stay-map",
     name: "Kitwe",
     taxonomy: "category",
-    count: 188288,
+    count: 421,
     thumbnail:
     imgPng6 as any,
   },
@@ -94,7 +94,7 @@ const DEMO_CATS: TaxonomyType[] = [
     href: "/listing-stay-map",
     name: "Ndola",
     taxonomy: "category",
-    count: 188288,
+    count: 1388,
     thumbnail:
     imgPng7 as any,
   },

@@ -7,6 +7,8 @@ import { Route } from "next";
 import Image from "next/image";
 import Badge from "@/shared/Badge";
 import { DEMO_POSTS } from "@/data/posts";
+import PostSlider from "./blogSlider";
+import BlogSlider from "./blogSlider";
 
 const postsDemo: PostDataType[] = DEMO_POSTS.filter((_, i) => i > 7 && i < 14);
 
@@ -62,10 +64,7 @@ const Blog = () => {
           </span>
         </div>
         <div className="w-50 border-b border-neutral-200 dark:border-neutral-700 my-8"></div>
-
-        <div className="grid grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 md:gap-x-6 lg:gap-x-8 xl:grid-cols-4">
-          {DEMO_POSTS.filter((_, i) => i < 4).map(renderPostRelated)}
-        </div>
+        <BlogSlider />
       </div>
     </section>
   );

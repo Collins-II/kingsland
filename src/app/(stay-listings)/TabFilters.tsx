@@ -1,7 +1,7 @@
 "use client";
 
 import React, { Dispatch, Fragment, SetStateAction, useEffect, useState } from "react";
-import { Dialog, Popover, Transition, TransitionChild } from "@headlessui/react";
+import { Dialog, DialogTitle, Popover, Transition, TransitionChild } from "@headlessui/react";
 import { motion } from "motion/react";
 import NcInputNumber from "@/components/NcInputNumber";
 import ButtonPrimary from "@/shared/ButtonPrimary";
@@ -478,7 +478,7 @@ useEffect(() => {
             onClose={closeModalMoreFilter}
           >
             <div className="min-h-screen text-center">
-              <Transition.Child
+              <TransitionChild
                 as={Fragment}
                 enter="ease-out duration-300"
                 enterFrom="opacity-0"
@@ -488,7 +488,7 @@ useEffect(() => {
                 leaveTo="opacity-0"
               >
                 <motion.div className="fixed inset-0 bg-black bg-opacity-40 dark:bg-opacity-60" />
-              </Transition.Child>
+              </TransitionChild>
 
               {/* This element is to trick the browser into centering the modal contents. */}
               <span
@@ -508,12 +508,12 @@ useEffect(() => {
                 <div className="inline-block py-8 px-2 h-screen w-full max-w-4xl">
                 <div className="inline-flex flex-col w-full max-w-4xl text-left align-middle transition-all transform overflow-hidden rounded-2xl bg-white dark:bg-neutral-900 dark:border dark:border-neutral-700 dark:text-neutral-100 shadow-xl h-full">
                   <div className="relative flex-shrink-0 px-6 py-4 border-b border-neutral-200 dark:border-neutral-800 text-center">
-                    <Dialog.Title
+                    <DialogTitle
                       as="h3"
                       className="text-lg font-medium leading-6 text-gray-900"
                     >
                       More filters
-                    </Dialog.Title>
+                    </DialogTitle>
                     <span className="absolute left-3 top-3">
                       <ButtonClose onClick={closeModalMoreFilter} />
                     </span>

@@ -93,12 +93,12 @@ const SectionGridHasMap: FC<SectionGridHasMapProps> = ({ data }) => {
     <div>
       <div className="relative flex min-h-screen">
         {/* CARD LIST */}
-        <div className="min-h-screen w-full xl:w-[60%] 2xl:w-[60%] max-w-[1184px] flex-shrink-0 xl:px-8 pt-14">
+        <div className="min-h-screen w-full xl:w-[60%] 2xl:w-[60%] max-w-[1184px] flex-shrink-0 xl:px-8 pt-4">
           <Heading2 className="!mb-8" />
           <div className="mb-8 lg:mb-11">
             <TabFilters data={data} setFilteredData={setFilteredData} />
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-5 2xl:gap-x-6 gap-y-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-5 2xl:gap-x-6 gap-y-8">
             {paginatedData.map((item) => (
               <div
                 key={item.id}

@@ -41,7 +41,7 @@ const FeaturesTabItem = ({
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
-        className="rounded-xl bg-white dark:bg-gray-800 py-6 flex flex-col lg:flex-row items-start gap-6"
+        className="rounded-xl bg-white dark:bg-gray-800 py-6 px-4 flex flex-col lg:flex-row items-start gap-6"
       >
         {/* Image Section */}
         {thumbnail && (
