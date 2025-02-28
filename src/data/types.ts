@@ -81,6 +81,7 @@ export interface StayDataType {
   maxGuests: number;
   bedrooms: number;
   bathrooms: number;
+  province: string;
   propertyType: string;
   amenities: string[],
   saleOff?: string | null;

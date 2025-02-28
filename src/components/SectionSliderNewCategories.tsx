@@ -13,6 +13,15 @@ import NextBtn from "./NextBtn";
 import { variants } from "@/utils/animationVariants";
 import { useWindowSize } from "react-use";
 
+
+import imgPng1 from "@/images/ests/est_1.jpg";
+import imgPng2 from "@/images/ests/est_2.jpg";
+import imgPng3 from "@/images/ests/est_3.jpg";
+import imgPng4 from "@/images/ests/est_4.jpg";
+import imgPng5 from "@/images/ests/est_5.jpg";
+import imgPng6 from "@/images/ests/est_6.jpg";
+import imgPng7 from "@/images/ests/est-7.jpg";
+
 export interface SectionSliderNewCategoriesProps {
   className?: string;
   itemClassName?: string;
@@ -28,76 +37,67 @@ const DEMO_CATS: TaxonomyType[] = [
   {
     id: "1",
     href: "/listing-stay-map",
-    name: "Nature House",
+    name: "Lusaka",
     taxonomy: "category",
-    count: 17288,
-    thumbnail:
-      "https://images.pexels.com/photos/2581922/pexels-photo-2581922.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260",
+    count: 188,
+    thumbnail: imgPng1 as any ,
   },
   {
     id: "2",
     href: "/listing-stay-map",
-    name: "Wooden house",
+    name: "Kafue",
     taxonomy: "category",
-    count: 2118,
+    count: 18,
     thumbnail:
-      "https://images.pexels.com/photos/2351649/pexels-photo-2351649.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+    imgPng2 as any,
   },
   {
     id: "3",
     href: "/listing-stay-map",
-    name: "Houseboat",
+    name: "Chingola",
     taxonomy: "category",
-    count: 36612,
+    count: 288,
     thumbnail:
-      "https://images.pexels.com/photos/962464/pexels-photo-962464.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+    imgPng3 as any,
   },
   {
     id: "4",
     href: "/listing-stay-map",
-    name: "Farm House",
+    name: "Mansa",
     taxonomy: "category",
-    count: 18188,
+    count: 548,
     thumbnail:
-      "https://images.pexels.com/photos/248837/pexels-photo-248837.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+    imgPng4 as any,
   },
   {
     id: "5",
     href: "/listing-stay-map",
-    name: "Dome House",
+    name: "Livingstone",
     taxonomy: "category",
-    count: 22288,
+    count: 178,
     thumbnail:
-      "https://images.pexels.com/photos/3613236/pexels-photo-3613236.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+    imgPng5 as any,
   },
   {
     id: "6",
     href: "/listing-stay-map",
-    name: "Dome House",
+    name: "Kitwe",
     taxonomy: "category",
-    count: 188288,
+    count: 421,
     thumbnail:
-      "https://images.pexels.com/photos/14534337/pexels-photo-14534337.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+    imgPng6 as any,
   },
   {
     id: "7",
     href: "/listing-stay-map",
-    name: "Wooden house",
+    name: "Ndola",
     taxonomy: "category",
-    count: 2118,
+    count: 1388,
     thumbnail:
-      "https://images.pexels.com/photos/2351649/pexels-photo-2351649.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
-  },
-  {
-    id: "8",
-    href: "/listing-stay-map",
-    name: "Wooden Dome",
-    taxonomy: "category",
-    count: 515,
-    thumbnail:
-      "https://images.pexels.com/photos/9039238/pexels-photo-9039238.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+    imgPng7 as any,
   },
 ];
+
 
 const SectionSliderNewCategories: FC<SectionSliderNewCategoriesProps> = ({
   heading = "Suggestions for discovery",

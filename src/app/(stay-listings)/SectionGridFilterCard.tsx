@@ -35,7 +35,7 @@ const SectionGridFilterCard: FC<SectionGridFilterCardProps> = ({
       className={`nc-SectionGridFilterCard ${className} xl:px-8 pt-4`}
       data-nc-id="SectionGridFilterCard"
     >
-      <Heading2 className="!mb-8"/>
+      <Heading2 heading="Premium" count={data.length} className="!mb-8"/>
 
       <div className="mb-8 lg:mb-11">
         <TabFilters data={data} setFilteredData={setFilteredData}/>

@@ -17,14 +17,14 @@ const CardCategory5: FC<CardCategory5Props> = ({
   const { count, name, href = "/", thumbnail } = taxonomy;
   return (
     <Link
-      href={href}
+      href={`${href}/${name}`}
       className={`nc-CardCategory5 flex flex-col ${className}`}
       data-nc-id="CardCategory5"
     >
        <div>
           <h2 className="text-1xl font-medium text-silverGray">{name}</h2>
           <span className="block mt-2 text-sm text-silverGray">
-          <Counter from={0} duration={5} to={count as number} /> properties
+          <Counter from={0} duration={3} to={count as number} /> <span className="mx-2">·</span> <span className="text-md font-light text-neutral-600">Properties</span>
           </span>
         </div>
         <div className="w-14 border-b border-neutral-200 dark:border-neutral-700 my-4"></div>

@@ -158,9 +158,9 @@ const Header3: FC<Header3Props> = ({ className = "" }) => {
             {/* NAV */}
             <div className="flex relative z-10 flex-1 justify-end text-neutral-700 dark:text-neutral-100">
               <div className=" flex space-x-1 mr-0 md:mr-10">
-              <div className="self-center">
+              {/*<div className="self-center">
                 {renderButtonOpenHeroSearch()}
-              </div>
+              </div>*/}
                 <div
                   className="self-center hidden md:flex xl:inline-flex px-1 border border-neutral-300 hover:border-neutral-400 dark:border-neutral-700 rounded-full items-center text-sm text-gray-700 dark:text-neutral-300 font-medium focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75"
                 >

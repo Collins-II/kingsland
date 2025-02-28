@@ -34,6 +34,7 @@ const customIcon = new L.Icon({
 
 export interface SectionGridHasMapProps {
   data: StayDataType[];
+  city: string;
 }
 
 const ITEMS_PER_PAGE = 9;
@@ -47,7 +48,7 @@ const MapEvents = ({ setBounds }: { setBounds: (bounds: L.LatLngBounds) => void 
   return null;
 };
 
-const SectionGridHasMap: FC<SectionGridHasMapProps> = ({ data }) => {
+const SectionGridHasMap: FC<SectionGridHasMapProps> = ({ data, city }) => {
   const selectedCurrency = useSelector((state: RootState) => state.currency.selectedCurrency);
   const convertPrice = useConvertPrice();
   const router = useRouter();
@@ -78,6 +79,7 @@ const SectionGridHasMap: FC<SectionGridHasMapProps> = ({ data }) => {
       );
     }
   }, [mapBounds, searchAsMove, data]);
+  
 
   const MapWithBounds = ({ setMapBounds }: { setMapBounds: (bounds: LatLngBounds) => void }) => {
   useMapEvents({
@@ -94,7 +96,7 @@ const SectionGridHasMap: FC<SectionGridHasMapProps> = ({ data }) => {
       <div className="relative flex min-h-screen">
         {/* CARD LIST */}
         <div className="min-h-screen w-full xl:w-[60%] 2xl:w-[60%] max-w-[1184px] flex-shrink-0 xl:px-8 pt-4">
-          <Heading2 className="!mb-8" />
+          <Heading2 heading={city} count={data.length} className="!mb-8" />
           <div className="mb-8 lg:mb-11">
             <TabFilters data={data} setFilteredData={setFilteredData} />
           </div>

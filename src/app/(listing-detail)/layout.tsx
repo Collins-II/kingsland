@@ -1,10 +1,11 @@
 "use client";
 
 import { useRouter, usePathname, useSearchParams } from "next/navigation";
-import React, { ReactNode, Suspense } from "react";
+import React, { ReactNode, Suspense, useState } from "react";
 import ListingImageGallery from "@/components/listing-image-gallery/ListingImageGallery";
 import SectionSliderNewCategories from "@/components/SectionSliderNewCategories";
 import MobileFooterSticky from "./(components)/MobileFooterSticky";
+import PaymentModal from "@/shared/paymentModal"; // Import the new modal
 import { imageGallery as listingStayImageGallery } from "./listing-stay-detail/constant";
 import { Route } from "next";
 import { TaxonomyType } from "@/data/types";
@@ -29,7 +30,8 @@ const DEMO_CATS: TaxonomyType[] = [
 
 const DetailtLayout = ({ children }: { children: ReactNode }) => {
   const router = useRouter();
-  const thisPathname = usePathname() ?? ""; // ✅ Ensure a fallback for `usePathname()`
+  const thisPathname = usePathname() ?? "";
+  const [isPaymentModalOpen, setPaymentModalOpen] = useState(false);
 
   return (
     <div className="ListingDetailPage">
@@ -52,13 +54,16 @@ const DetailtLayout = ({ children }: { children: ReactNode }) => {
         />
       </div>
 
+      {/* PAYMENT MODAL 
+      <PaymentModal isOpen={isPaymentModalOpen} onClose={() => setPaymentModalOpen(false)} /> */}
+
       {/* STICKY FOOTER MOBILE */}
       <MobileFooterSticky />
     </div>
   );
 };
 
-// 🔹 Extracted SearchParamsHandler to wrap useSearchParams() in Suspense
+// Extracted SearchParamsHandler
 const SearchParamsHandler = ({ thisPathname, router }: { thisPathname: string; router: ReturnType<typeof useRouter> }) => {
   const searchParams = useSearchParams();
   const modal = searchParams?.get("modal");

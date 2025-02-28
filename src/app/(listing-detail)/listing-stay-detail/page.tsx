@@ -53,12 +53,12 @@ const ListingStayDetailPage = () => {
       <div className="listingSection__wrap space-y-6 bg-white dark:bg-neutral-900 p-6 rounded-xl">
   {/* Top Row - Badge & Like Buttons */}
   <div className="flex justify-between items-center">
-    <Badge name="Wooden House" className="text-lg font-semibold bg-primary-500 dark:bg-white text-white dark:text-slate-900 px-4 py-2 rounded-full" />
+    <Badge name="House" className="text-lg font-semibold bg-primary-500 dark:bg-white text-white dark:text-slate-900 px-4 py-2 rounded-full" />
     <LikeSaveBtns />
   </div>
 
   {/* Title */}
-  <h2 className="text-1xl sm:text-2xl lg:text-3xl font-bold text-gold">
+  <h2 className="text-2xl lg:text-3xl font-bold text-slate-900">
      Beach House in Meanwood
   </h2>
 
@@ -78,15 +78,9 @@ const ListingStayDetailPage = () => {
   {/* Property Details */}
   <div className="flex flex-wrap gap-6 text-lg text-gray-700 dark:text-gray-300">
     <div className="flex items-center space-x-3">
-      <i className="las la-user text-2xl text-silverGray"></i>
-      <span>
-        <strong>6</strong> <span className="hidden sm:inline-block">Guests</span>
-      </span>
-    </div>
-    <div className="flex items-center space-x-3">
       <i className="las la-bed text-2xl text-silverGray"></i>
       <span>
-        <strong>6</strong> <span className="hidden sm:inline-block">Beds</span>
+        <strong>6</strong> <span className="hidden sm:inline-block">Bedrooms</span>
       </span>
     </div>
     <div className="flex items-center space-x-3">
@@ -96,10 +90,11 @@ const ListingStayDetailPage = () => {
       </span>
     </div>
     <div className="flex items-center space-x-3">
-      <i className="las la-door-open text-2xl text-silverGray"></i>
+      <i className="las la-ruler-combined text-2xl text-silverGray"></i>
       <span>
-        <strong>2</strong> <span className="hidden sm:inline-block">Bedrooms</span>
-      </span>
+      <strong>23 </strong> 
+      <span className=" sm:inline-block">sqm</span>
+     </span>
     </div>
   </div>
 </div>
@@ -462,7 +457,7 @@ const ListingStayDetailPage = () => {
     return (
       <div className="listingSection__wrap bg-white dark:bg-neutral-900 p-6 rounded-xl space-y-6">
   {/* Heading */}
-  <h2 className="text-2xl font-semibold text-silverGray">Things to Know – Kingsland City</h2>
+  <h2 className="text-2xl font-semibold text-silverGray">Things to Know</h2>
   <div className="w-14 border-b border-neutral-200 dark:border-neutral-700" />
 
   {/* Cancellation Policy */}
