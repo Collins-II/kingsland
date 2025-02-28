@@ -31,7 +31,7 @@ const Layout = ({ children }: { children: ReactNode }) => {
       <div className="container overflow-hidden">
         {/* SECTION 1 */}
         {/* OTHER SECTION */}
-      <div className="container py-12 lg:py-18">
+      <div className="container py-12">
       <SectionSliderNewCategories
         categoryCardType="card5"
         itemPerRow={5}

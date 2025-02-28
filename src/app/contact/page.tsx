@@ -1,95 +1,102 @@
-import React, { FC } from "react";
-import SectionSubscribe2 from "@/components/SectionSubscribe2";
-import SocialsList from "@/shared/SocialsList";
-import Label from "@/components/Label";
 import Input from "@/shared/Input";
-import Textarea from "@/shared/Textarea";
-import ButtonPrimary from "@/shared/ButtonPrimary";
+import ButtonCircle from "@/shared/ButtonCircle";
+import { ArrowRightIcon } from "@heroicons/react/24/solid";
+import NewsLatterBox from "@/components/Contact/NewsLatterBox";
 
-export interface PageContactProps {}
-
-const info = [
-  {
-    title: "🗺 ADDRESS",
-    desc: "Photo booth tattooed prism, portland taiyaki hoodie neutra typewriter",
-  },
-  {
-    title: "💌 EMAIL",
-    desc: "nc.example@example.com",
-  },
-  {
-    title: "☎ PHONE",
-    desc: "000-123-456-7890",
-  },
-];
-
-const PageContact: FC<PageContactProps> = ({}) => {
+const Contact = () => {
   return (
-    <div className={`nc-PageContact overflow-hidden`}>
-      <div className="mb-24 lg:mb-32">
-        <h2 className="my-16 sm:my-20 flex items-center text-3xl leading-[115%] md:text-5xl md:leading-[115%] font-semibold text-neutral-900 dark:text-neutral-100 justify-center">
-          Contact
-        </h2>
-        <div className="container max-w-7xl mx-auto">
-          <div className="flex-shrink-0 grid grid-cols-1 sm:grid-cols-2 gap-12 ">
-            <div className="max-w-sm space-y-8">
-              {info.map((item, index) => (
-                <div key={index}>
-                  <h3 className="uppercase font-semibold text-sm dark:text-neutral-200 tracking-wider">
-                    {item.title}
-                  </h3>
-                  <span className="block mt-2 text-neutral-500 dark:text-neutral-400">
-                    {item.desc}
-                  </span>
+    <section
+      id="contact"
+      className="relative overflow-hidden dark:from-gray-900 dark:to-gray-800"
+    >
+      <div className="listingSection__wrap">
+        <div className="flex flex-wrap items-center">
+          {/* Contact Form */}
+          <div className="z-10 w-full lg:w-7/12 xl:w-8/12">
+            <div
+              className="mb-12 rounded-lg bg-white dark:bg-gray-800 py-8 px-4"
+              data-wow-delay=".15s"
+            >
+              <h2 className="mb-3 text-3xl font-bold text-silverGray sm:text-4xl">
+                Want To Visit? <br /> Open a Ticket
+              </h2>
+              <p className="mb-8 text-lg text-gray-600 dark:text-gray-300">
+                Our support team will get back to you ASAP via email.
+              </p>
+
+              <form>
+                <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+                  {/* Name Input */}
+                  <div>
+                    <label
+                      htmlFor="name"
+                      className="block text-sm font-medium text-gray-700 dark:text-gray-300"
+                    >
+                      Your Name
+                    </label>
+                    <div className="relative">
+            <Input
+              fontClass=""
+              sizeClass="h-12 mt-3 px-4 py-3"
+              rounded="rounded-3xl"
+              placeholder="Enter your name ..."
+            />
+            
+          </div>
+      
+                  </div>
+
+                  {/* Email Input */}
+                  <div>
+                    <label
+                      htmlFor="email"
+                      className="block text-sm font-medium text-gray-700 dark:text-gray-300"
+                    >
+                      Your Email
+                    </label>
+                    <Input
+                      fontClass=""
+                      sizeClass="h-12 mt-3 px-4 py-3"
+                      rounded="rounded-3xl"
+                      placeholder="Enter email ..."
+                     />
+                  </div>
                 </div>
-              ))}
-              <div>
-                <h3 className="uppercase font-semibold text-sm dark:text-neutral-200 tracking-wider">
-                  🌏 SOCIALS
-                </h3>
-                <SocialsList className="mt-2" />
-              </div>
-            </div>
-            <div>
-              <form className="grid grid-cols-1 gap-6" action="#" method="post">
-                <label className="block">
-                  <Label>Full name</Label>
 
-                  <Input
-                    placeholder="Example Doe"
-                    type="text"
-                    className="mt-1"
-                  />
-                </label>
-                <label className="block">
-                  <Label>Email address</Label>
+                {/* Message Input */}
+                <div className="mt-6">
+                  <label
+                    htmlFor="message"
+                    className="block text-sm font-medium text-gray-700 dark:text-gray-300"
+                  >
+                    Your Message
+                  </label>
+                  <textarea
+                    name="message"
+                    rows={5}
+                    placeholder="Enter your Message"
+                    className="mt-2 w-full resize-none rounded-lg border border-gray-300 bg-gray-50 px-4 py-3 text-gray-900 outline-none transition duration-200 focus:border-primary-500 focus:ring-2 focus:ring-primary-200 dark:border-gray-700 dark:bg-gray-700 dark:text-gray-200 dark:focus:ring-primary"
+                  ></textarea>
+                </div>
 
-                  <Input
-                    type="email"
-                    placeholder="example@example.com"
-                    className="mt-1"
-                  />
-                </label>
-                <label className="block">
-                  <Label>Message</Label>
-
-                  <Textarea className="mt-1" rows={6} />
-                </label>
-                <div>
-                  <ButtonPrimary type="submit">Send Message</ButtonPrimary>
+                {/* Submit Button */}
+                <div className="mt-6">
+                  <button aria-label="submit-button" className="w-full flex justify-center rounded-full shadow-sm bg-gold px-6 py-3 text-lg font-bold text-white hover:text-gold shadow-lg transition duration-300 hover:bg-white focus:outline-none focus:ring-2 focus:ring-primary-400">
+                      <ArrowRightIcon className="w-5 h-5" />
+                  </button>
                 </div>
               </form>
             </div>
           </div>
+
+          {/* Right Section */}
+          <div className="w-full px-4 lg:w-5/12 xl:w-4/12">
+            <NewsLatterBox />
+          </div>
         </div>
       </div>
-
-      {/* OTHER SECTIONS */}
-      <div className="container">
-        <SectionSubscribe2 className="pb-24 lg:pb-32" />
-      </div>
-    </div>
+    </section>
   );
 };
 
-export default PageContact;
+export default Contact;
