@@ -4,6 +4,7 @@ import convertNumbThousand from "@/utils/convertNumbThousand";
 import Link from "next/link";
 import Image from "next/image";
 import Counter from "@/shared/Counter";
+import { Route } from "next";
 
 export interface CardCategory5Props {
   className?: string;
@@ -17,7 +18,7 @@ const CardCategory5: FC<CardCategory5Props> = ({
   const { count, name, href = "/", thumbnail } = taxonomy;
   return (
     <Link
-      href={`${href}/${name}`}
+      href={`${href}/${name}` as Route}
       className={`nc-CardCategory5 flex flex-col ${className}`}
       data-nc-id="CardCategory5"
     >

@@ -4,6 +4,7 @@ import HeroSearchForm from "../(client-components)/(HeroSearchForm)/HeroSearchFo
 import Image from "next/image";
 import ButtonPrimary from "@/shared/ButtonPrimary";
 import { PHOTOS } from "../(listing-detail)/listing-stay-detail/constant";
+import { Route } from "next";
 
 export interface SectionHeroProps {
   className?: string;
@@ -24,7 +25,7 @@ const SectionHero: FC<SectionHeroProps> = ({ className = "" }) => {
           <span className="text-base md:text-lg text-neutral-500 dark:text-neutral-400">
             Enjoy safe workouts and joyful playtime at Kingsland City’s Central Park – your secure haven for a healthy lifestyle. 🌳✨
           </span>
-          <ButtonPrimary href="/listing-stay-map" sizeClass="px-5 py-4 sm:px-7">
+          <ButtonPrimary href={"/listing-stay-map" as Route} sizeClass="px-5 py-4 sm:px-7">
             Start your adventure
           </ButtonPrimary>
         </div>

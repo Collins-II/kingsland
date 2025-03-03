@@ -21,6 +21,7 @@ import imgPng4 from "@/images/ests/est_4.jpg";
 import imgPng5 from "@/images/ests/est_5.jpg";
 import imgPng6 from "@/images/ests/est_6.jpg";
 import imgPng7 from "@/images/ests/est-7.jpg";
+import { Route } from "next";
 
 export interface SectionSliderNewCategoriesProps {
   className?: string;
@@ -36,7 +37,7 @@ export interface SectionSliderNewCategoriesProps {
 const DEMO_CATS: TaxonomyType[] = [
   {
     id: "1",
-    href: "/listing-stay-map",
+    href: "/listing-stay-map" as Route,
     name: "Lusaka",
     taxonomy: "category",
     count: 188,
@@ -44,7 +45,7 @@ const DEMO_CATS: TaxonomyType[] = [
   },
   {
     id: "2",
-    href: "/listing-stay-map",
+    href: "/listing-stay-map" as Route,
     name: "Kafue",
     taxonomy: "category",
     count: 18,
@@ -53,7 +54,7 @@ const DEMO_CATS: TaxonomyType[] = [
   },
   {
     id: "3",
-    href: "/listing-stay-map",
+    href: "/listing-stay-map" as Route,
     name: "Chingola",
     taxonomy: "category",
     count: 288,
@@ -62,7 +63,7 @@ const DEMO_CATS: TaxonomyType[] = [
   },
   {
     id: "4",
-    href: "/listing-stay-map",
+    href: "/listing-stay-map" as Route,
     name: "Mansa",
     taxonomy: "category",
     count: 548,
@@ -71,7 +72,7 @@ const DEMO_CATS: TaxonomyType[] = [
   },
   {
     id: "5",
-    href: "/listing-stay-map",
+    href: "/listing-stay-map" as Route,
     name: "Livingstone",
     taxonomy: "category",
     count: 178,
@@ -80,7 +81,7 @@ const DEMO_CATS: TaxonomyType[] = [
   },
   {
     id: "6",
-    href: "/listing-stay-map",
+    href: "/listing-stay-map" as Route,
     name: "Kitwe",
     taxonomy: "category",
     count: 421,
@@ -89,7 +90,7 @@ const DEMO_CATS: TaxonomyType[] = [
   },
   {
     id: "7",
-    href: "/listing-stay-map",
+    href: "/listing-stay-map" as Route,
     name: "Ndola",
     taxonomy: "category",
     count: 1388,

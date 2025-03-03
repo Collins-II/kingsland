@@ -19,13 +19,13 @@ import imgPng6 from "@/images/ests/est_6.jpg";
 import imgPng7 from "@/images/ests/est-7.jpg";
 
 const DEMO_CATS: TaxonomyType[] = [
-  { id: "1", href: "/listing-stay-map", name: "Lusaka", taxonomy: "category", count: 188288, thumbnail: imgPng1 as any },
-  { id: "2", href: "/listing-stay-map", name: "Kafue", taxonomy: "category", count: 188288, thumbnail: imgPng2 as any },
-  { id: "3", href: "/listing-stay-map", name: "Chingola", taxonomy: "category", count: 188288, thumbnail: imgPng3 as any },
-  { id: "4", href: "/listing-stay-map", name: "Mansa", taxonomy: "category", count: 188288, thumbnail: imgPng4 as any },
-  { id: "5", href: "/listing-stay-map", name: "Livingstone", taxonomy: "category", count: 188288, thumbnail: imgPng5 as any },
-  { id: "6", href: "/listing-stay-map", name: "Kitwe", taxonomy: "category", count: 188288, thumbnail: imgPng6 as any },
-  { id: "7", href: "/listing-stay-map", name: "Ndola", taxonomy: "category", count: 188288, thumbnail: imgPng7 as any },
+  { id: "1", href: "/listing-stay-map" as Route, name: "Lusaka", taxonomy: "category", count: 188288, thumbnail: imgPng1 as any },
+  { id: "2", href: "/listing-stay-map" as Route, name: "Kafue", taxonomy: "category", count: 188288, thumbnail: imgPng2 as any },
+  { id: "3", href: "/listing-stay-map" as Route, name: "Chingola", taxonomy: "category", count: 188288, thumbnail: imgPng3 as any },
+  { id: "4", href: "/listing-stay-map" as Route, name: "Mansa", taxonomy: "category", count: 188288, thumbnail: imgPng4 as any },
+  { id: "5", href: "/listing-stay-map" as Route, name: "Livingstone", taxonomy: "category", count: 188288, thumbnail: imgPng5 as any },
+  { id: "6", href: "/listing-stay-map" as Route, name: "Kitwe", taxonomy: "category", count: 188288, thumbnail: imgPng6 as any },
+  { id: "7", href: "/listing-stay-map" as Route, name: "Ndola", taxonomy: "category", count: 188288, thumbnail: imgPng7 as any },
 ];
 
 const DetailtLayout = ({ children }: { children: ReactNode }) => {
