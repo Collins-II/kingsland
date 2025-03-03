@@ -23,14 +23,15 @@ import GuestsInput from "./GuestsInput";
 import SectionDateRange from "./../SectionDateRange";
 import { Route } from "next";
 import StripeButton from "@/components/StripeButton";
+import dynamic from "next/dynamic";
 
-export const dynamic = "force-dynamic"; // Temporary fix for debugging
 
 export interface ListingStayDetailPageProps {}
 
+const DynamicMap = dynamic(() => import("../../../components/MapContainer"), { ssr: false });
 const ListingStayDetailPage = () => {
-  //
-
+  
+  const position: [number, number] = [-12.823333, 28.220000];
   let [isOpenModalAmenities, setIsOpenModalAmenities] = useState(false);
 
   const thisPathname = usePathname() ?? "/listing-stay-detail"; // ✅ Ensure fallback value
@@ -58,7 +59,7 @@ const ListingStayDetailPage = () => {
   </div>
 
   {/* Title */}
-  <h2 className="text-2xl lg:text-3xl font-bold text-slate-900">
+  <h2 className="text-2xl lg:text-3xl font-bold text-slate-900 dark:text-white">
      Beach House in Meanwood
   </h2>
 
@@ -67,7 +68,7 @@ const ListingStayDetailPage = () => {
     <StartRating />
     <span>·</span>
     <span className="flex items-center space-x-1">
-      <i className="las la-map-marker-alt text-xl text-blue-500"></i>
+      <i className="las la-map-marker-alt text-xl text-gray-500"></i>
       <span className="ml-1 font-medium">Lusaka, Zambia</span>
     </span>
   </div>
@@ -439,14 +440,7 @@ const ListingStayDetailPage = () => {
         {/* MAP */}
         <div className="aspect-w-5 aspect-h-5 sm:aspect-h-3 ring-1 ring-black/10 rounded-xl z-0">
           <div className="rounded-xl overflow-hidden z-0">
-            <iframe
-              width="100%"
-              height="100%"
-              loading="lazy"
-              allowFullScreen
-              referrerPolicy="no-referrer-when-downgrade"
-              src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAGVJfZMAKYfZ71nzL_v5i3LjTTWnCYwTY&q=Eiffel+Tower,Paris+France"
-            ></iframe>
+            <DynamicMap position={position} />
           </div>
         </div>
       </div>

@@ -153,7 +153,7 @@ const SectionGridHasMap: FC<SectionGridHasMapProps> = ({ data, city }) => {
             {/* LEAFLET MAP */}
            <MapContainer
              center={defaultCenter}
-             zoom={12}
+             zoom={13}
              className="w-full h-full"
              style={containerStyle}
             >
